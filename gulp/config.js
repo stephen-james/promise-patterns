@@ -57,6 +57,13 @@ module.exports = {
             // list of modules to make require-able externally
             require: ['underscore']
         }, {
+            entries: src + '/javascript/promisePatterns/index.js',
+            dest: dest,
+            outputName: 'promisePatterns.js',
+            standalone: 'promisePatterns',
+            // list of modules to make require-able externally
+            external: ['underscore', 'bluebird']
+        }, {
             entries: src + '/javascript/app.js',
             dest: dest,
             outputName: 'app.js',
